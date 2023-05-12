@@ -1,0 +1,9 @@
+type Query {
+  issue(id: ID!): Issue
+}
+
+type Issue {
+  id: ID!
+  text: String!
+  parent: Issue
+}

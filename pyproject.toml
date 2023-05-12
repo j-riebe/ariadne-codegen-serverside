@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ariadne-codegen-serverside"
+version = "0.1.0"
+description = ""
+authors = ["Jakob Riebe <jr@estino.de>"]
+license = "LICENSE"
+readme = "README.md"
+packages = [{ include = "mypackage" }, { include = "generated" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ariadne = "^0.19.1"
+pyright = "^1.1.305"
+mypy = "^1.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
